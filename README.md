@@ -139,12 +139,279 @@ F8 = ((A XOR B) & (C XNOR D))
 
 Use this format to record the results:
 
+For F1 OUTPUT
 | Inputs | Expected output | Observed output | Status |
-|---|---|---|---|
-| 0000 |  |  |  |
-| 0001 |  |  |  |
-| 0010 |  |  |  |
-| ... |  |  |  |
+| :---: | :---: | :---: | :---: |
+| 0000 | 0 | 0 | PASS |
+| 0001 | 0 | 0 | PASS |
+| 0010 | 0 | 0 | PASS |
+| 0011 | 1 | 1 | PASS |
+| 0100 | 0 | 0 | PASS |
+| 0101 | 0 | 0 | PASS |
+| 0110 | 1 | 1 | PASS |
+| 0111 | 1 | 1 | PASS |
+| 1000 | 0 | 0 | PASS |
+| 1001 | 1 | 1 | PASS |
+| 1010 | 0 | 0 | PASS |
+| 1011 | 1 | 1 | PASS |
+| 1100 | 1 | 1 | PASS |
+| 1101 | 1 | 1 | PASS |
+| 1110 | 1 | 1 | PASS |
+| 1111 | 0 | 0 | PASS |
+
+For F2 OUTPUT
+| Inputs | Expected output | Observed output | Status |
+| :---: | :---: | :---: | :---: |
+| 0000 | 1 | 1 | PASS |
+| 0001 | 1 | 1 | PASS |
+| 0010 | 1 | 1 | PASS |
+| 0011 | 0 | 0 | PASS |
+| 0100 | 0 | 0 | PASS |
+| 0101 | 0 | 0 | PASS |
+| 0110 | 1 | 1 | PASS |
+| 0111 | 1 | 1 | PASS |
+| 1000 | 0 | 0 | PASS |
+| 1001 | 1 | 1 | PASS |
+| 1010 | 0 | 0 | PASS |
+| 1011 | 0 | 0 | PASS |
+| 1100 | 1 | 1 | PASS |
+| 1101 | 1 | 1 | PASS |
+| 1110 | 1 | 1 | PASS |
+| 1111 | 1 | 1 | PASS |
+
+For F3 OUTPUT
+| Inputs | Expected output | Observed output | Status |
+| :---: | :---: | :---: | :---: |
+| 0000 | 0 | 0 | PASS |
+| 0001 | 0 | 0 | PASS |
+| 0010 | 1 | 1 | PASS |
+| 0011 | 1 | 1 | PASS |
+| 0100 | 1 | 1 | PASS |
+| 0101 | 1 | 1 | PASS |
+| 0110 | 1 | 1 | PASS |
+| 0111 | 1 | 1 | PASS |
+| 1000 | 1 | 1 | PASS |
+| 1001 | 1 | 1 | PASS |
+| 1010 | 1 | 1 | PASS |
+| 1011 | 0 | 0 | PASS |
+| 1100 | 1 | 1 | PASS |
+| 1101 | 1 | 1 | PASS |
+| 1110 | 1 | 1 | PASS |
+| 1111 | 0 | 0 | PASS |
+
+For F4 OUTPUT
+| Inputs | Expected output | Observed output | Status |
+| :---: | :---: | :---: | :---: |
+| 0000 | 1 | 1 | PASS |
+| 0001 | 0 | 0 | PASS |
+| 0010 | 0 | 0 | PASS |
+| 0011 | 1 | 1 | PASS |
+| 0100 | 1 | 1 | PASS |
+| 0101 | 0 | 0 | PASS |
+| 0110 | 0 | 0 | PASS |
+| 0111 | 1 | 1 | PASS |
+| 1000 | 0 | 0 | PASS |
+| 1001 | 0 | 0 | PASS |
+| 1010 | 0 | 0 | PASS |
+| 1011 | 0 | 0 | PASS |
+| 1100 | 1 | 1 | PASS |
+| 1101 | 0 | 0 | PASS |
+| 1110 | 0 | 0 | PASS |
+| 1111 | 1 | 1 | PASS |
+
+For F5 OUTPUT
+| Inputs | Expected output | Observed output | Status |
+| :---: | :---: | :---: | :---: |
+| 00000 | 0 | 0 | PASS |
+| 00001 | 0 | 0 | PASS |
+| 00010 | 0 | 0 | PASS |
+| 00011 | 1 | 1 | PASS |
+| 00100 | 0 | 0 | PASS |
+| 00101 | 0 | 0 | PASS |
+| 00110 | 1 | 1 | PASS |
+| 00111 | 1 | 1 | PASS |
+| 01000 | 0 | 0 | PASS |
+| 01001 | 0 | 0 | PASS |
+| 01010 | 0 | 0 | PASS |
+| 01011 | 1 | 1 | PASS |
+| 01100 | 1 | 1 | PASS |
+| 01101 | 0 | 0 | PASS |
+| 01110 | 1 | 1 | PASS |
+| 01111 | 1 | 1 | PASS |
+| 10000 | 0 | 0 | PASS |
+| 10001 | 0 | 0 | PASS |
+| 10010 | 0 | 0 | PASS |
+| 10011 | 0 | 0 | PASS |
+| 10100 | 0 | 0 | PASS |
+| 10101 | 0 | 0 | PASS |
+| 10110 | 1 | 1 | PASS |
+| 10111 | 1 | 1 | PASS |
+| 11000 | 1 | 1 | PASS |
+| 11001 | 1 | 1 | PASS |
+| 11010 | 1 | 1 | PASS |
+| 11011 | 1 | 1 | PASS |
+| 11100 | 1 | 1 | PASS |
+| 11101 | 0 | 0 | PASS |
+| 11110 | 1 | 1 | PASS |
+| 11111 | 0 | 0 | PASS |
+
+For F6 OUTPUT
+| Inputs | Expected output | Observed output | Status |
+| :---: | :---: | :---: | :---: |
+| 000000 | 0 | 0 | PASS |
+| 000001 | 0 | 0 | PASS |
+| 000010 | 0 | 0 | PASS |
+| 000011 | 1 | 1 | PASS |
+| 000100 | 0 | 0 | PASS |
+| 000101 | 0 | 0 | PASS |
+| 000110 | 1 | 1 | PASS |
+| 000111 | 1 | 1 | PASS |
+| 001000 | 0 | 0 | PASS |
+| 001001 | 1 | 1 | PASS |
+| 001010 | 0 | 0 | PASS |
+| 001011 | 0 | 0 | PASS |
+| 001100 | 1 | 1 | PASS |
+| 001101 | 1 | 1 | PASS |
+| 001110 | 0 | 0 | PASS |
+| 001111 | 0 | 0 | PASS |
+| 010000 | 1 | 1 | PASS |
+| 010001 | 1 | 1 | PASS |
+| 010010 | 1 | 1 | PASS |
+| 010011 | 1 | 1 | PASS |
+| 010100 | 0 | 0 | PASS |
+| 010101 | 0 | 0 | PASS |
+| 010110 | 1 | 1 | PASS |
+| 010111 | 1 | 1 | PASS |
+| 011000 | 0 | 0 | PASS |
+| 011001 | 1 | 1 | PASS |
+| 011010 | 1 | 1 | PASS |
+| 011011 | 1 | 1 | PASS |
+| 011100 | 1 | 1 | PASS |
+| 011101 | 1 | 1 | PASS |
+| 011110 | 1 | 1 | PASS |
+| 011111 | 1 | 1 | PASS |
+| 100000 | 1 | 1 | PASS |
+| 100001 | 1 | 1 | PASS |
+| 100010 | 1 | 1 | PASS |
+| 100011 | 1 | 1 | PASS |
+| 100100 | 0 | 0 | PASS |
+| 100101 | 0 | 0 | PASS |
+| 100110 | 1 | 1 | PASS |
+| 100111 | 1 | 1 | PASS |
+| 101000 | 0 | 0 | PASS |
+| 101001 | 1 | 1 | PASS |
+| 101010 | 0 | 0 | PASS |
+| 101011 | 0 | 0 | PASS |
+| 101100 | 1 | 1 | PASS |
+| 101101 | 1 | 1 | PASS |
+| 101110 | 0 | 0 | PASS |
+| 101111 | 0 | 0 | PASS |
+| 110000 | 1 | 1 | PASS |
+| 110001 | 1 | 1 | PASS |
+| 110010 | 1 | 1 | PASS |
+| 110011 | 1 | 1 | PASS |
+| 110100 | 0 | 0 | PASS |
+| 110101 | 0 | 0 | PASS |
+| 110110 | 1 | 1 | PASS |
+| 110111 | 1 | 1 | PASS |
+| 111000 | 0 | 0 | PASS |
+| 111001 | 1 | 1 | PASS |
+| 111010 | 0 | 0 | PASS |
+| 111011 | 0 | 0 | PASS |
+| 111100 | 1 | 1 | PASS |
+| 111101 | 1 | 1 | PASS |
+| 111110 | 0 | 0 | PASS |
+| 111111 | 0 | 0 | PASS |
+
+For F7 OUTPUT
+| Inputs | Expected output | Observed output | Status |
+| :---: | :---: | :---: | :---: |
+| 0000 | 1 | 1 | PASS |
+| 0001 | 0 | 0 | PASS |
+| 0010 | 0 | 0 | PASS |
+| 0011 | 0 | 0 | PASS |
+| 0100 | 1 | 1 | PASS |
+| 0101 | 1 | 1 | PASS |
+| 0110 | 0 | 0 | PASS |
+| 0111 | 0 | 0 | PASS |
+| 1000 | 1 | 1 | PASS |
+| 1001 | 0 | 0 | PASS |
+| 1010 | 0 | 0 | PASS |
+| 1011 | 0 | 0 | PASS |
+| 1100 | 0 | 0 | PASS |
+| 1101 | 0 | 0 | PASS |
+| 1110 | 0 | 0 | PASS |
+| 1111 | 0 | 0 | PASS |
+
+For F8 OUTPUT
+| Inputs | Expected output | Observed output | Status |
+| :---: | :---: | :---: | :---: |
+| 000000 | 0 | 0 | PASS |
+| 000001 | 0 | 0 | PASS |
+| 000010 | 0 | 0 | PASS |
+| 000011 | 0 | 0 | PASS |
+| 000100 | 0 | 0 | PASS |
+| 000101 | 0 | 0 | PASS |
+| 000110 | 0 | 0 | PASS |
+| 000111 | 0 | 0 | PASS |
+| 001000 | 0 | 0 | PASS |
+| 001001 | 0 | 0 | PASS |
+| 001010 | 1 | 1 | PASS |
+| 001011 | 1 | 1 | PASS |
+| 001100 | 0 | 0 | PASS |
+| 001101 | 0 | 0 | PASS |
+| 001110 | 1 | 1 | PASS |
+| 001111 | 1 | 1 | PASS |
+| 010000 | 1 | 1 | PASS |
+| 010001 | 1 | 1 | PASS |
+| 010010 | 1 | 1 | PASS |
+| 010011 | 1 | 1 | PASS |
+| 010100 | 0 | 0 | PASS |
+| 010101 | 0 | 0 | PASS |
+| 010110 | 0 | 0 | PASS |
+| 010111 | 0 | 0 | PASS |
+| 011000 | 0 | 0 | PASS |
+| 011001 | 0 | 0 | PASS |
+| 011010 | 0 | 0 | PASS |
+| 011011 | 0 | 0 | PASS |
+| 011100 | 1 | 1 | PASS |
+| 011101 | 1 | 1 | PASS |
+| 011110 | 1 | 1 | PASS |
+| 011111 | 1 | 1 | PASS |
+| 100000 | 1 | 1 | PASS |
+| 100001 | 1 | 1 | PASS |
+| 100010 | 1 | 1 | PASS |
+| 100011 | 1 | 1 | PASS |
+| 100100 | 0 | 0 | PASS |
+| 100101 | 0 | 0 | PASS |
+| 100110 | 0 | 0 | PASS |
+| 100111 | 0 | 0 | PASS |
+| 101000 | 0 | 0 | PASS |
+| 101001 | 0 | 0 | PASS |
+| 101010 | 0 | 0 | PASS |
+| 101011 | 0 | 0 | PASS |
+| 101100 | 1 | 1 | PASS |
+| 101101 | 1 | 1 | PASS |
+| 101110 | 1 | 1 | PASS |
+| 101111 | 1 | 1 | PASS |
+| 110000 | 1 | 1 | PASS |
+| 110001 | 0 | 0 | PASS |
+| 110010 | 1 | 1 | PASS |
+| 110011 | 0 | 0 | PASS |
+| 110100 | 0 | 0 | PASS |
+| 110101 | 0 | 0 | PASS |
+| 110110 | 0 | 0 | PASS |
+| 110111 | 0 | 0 | PASS |
+| 111000 | 1 | 1 | PASS |
+| 111001 | 0 | 0 | PASS |
+| 111010 | 1 | 1 | PASS |
+| 111011 | 0 | 0 | PASS |
+| 111100 | 0 | 0 | PASS |
+| 111101 | 0 | 0 | PASS |
+| 111110 | 0 | 0 | PASS |
+| 111111 | 0 | 0 | PASS |
+
+
 
 Extend the table to include every input combination required by each equation.
 
@@ -160,11 +427,27 @@ For each circuit, record:
 - Logic depth
 - Functional equivalence before and after simplification
 
+HERE IS THE ANALYSIS RECORD:
+| Equation | NOT Gates | AND Gates | OR Gates | XOR/XNOR Gates | Total Gate Count | Logic Depth | Functional Equivalence |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **F1** | 4 | 4 | 1 | 0 | **9** | 3 | Equivalent |
+| **F2** | 3 | 1 | 3 | 0 | **7** | 3 | Equivalent |
+| **F3 (Simplified)** | 3 | 3 | 2 | 0 | **8** | 3 | Equivalent |
+| **F4 (XOR/XNOR)** | 1 | 1 | 1 | 2 | **5** | 3 | Equivalent |
+| **F5** | 3 | 4 | 1 | 0 | **8** | 3 | Equivalent |
+| **F6** | 1 | 3 | 2 | 1 | **7** | 4 | Equivalent |
+| **F7 (Hybrid)** | 0 | 2 | 1 | 3 (2 NOR, 1 NAND) | **6** | 3 | Equivalent |
+| **F8** | 1 | 3 | 1 | 2 (1 XOR, 1 XNOR) | **7** | 4 | Equivalent |
+
 ## 7. Expected Results (drop the screenshots of each equations circuit )
-
-
-
-
+<img width="1267" height="645" alt="COA F1" src="https://github.com/user-attachments/assets/418cbb0b-fa84-4048-b65c-78396f8890d6" />
+<img width="1251" height="640" alt="COA F2" src="https://github.com/user-attachments/assets/ddf3bdbf-d98d-41b2-a7bf-41987b14a61e" />
+<img width="1417" height="652" alt="COA F3" src="https://github.com/user-attachments/assets/a6c48f14-c713-47fc-9548-5a3673e80e3d" />
+<img width="1047" height="530" alt="COA F4" src="https://github.com/user-attachments/assets/eaac41e0-0cd2-43fb-acf1-8656ee94cded" />
+<img width="1326" height="650" alt="COA F5" src="https://github.com/user-attachments/assets/354563ae-5479-49bd-8a73-9e47138a07ad" />
+<img width="1153" height="625" alt="COA F6" src="https://github.com/user-attachments/assets/e92c211f-5cf6-4c8c-b041-660c2f652d3f" />
+<img width="1056" height="582" alt="COA F7" src="https://github.com/user-attachments/assets/3e1e1210-9da5-484a-a468-0b9a5135aed8" />
+<img width="1302" height="652" alt="COA F8" src="https://github.com/user-attachments/assets/177e6a5c-1bb0-4216-be92-5105b0453beb" />
  
 ## 8. Result
 
